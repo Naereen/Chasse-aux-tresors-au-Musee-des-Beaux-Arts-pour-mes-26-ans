@@ -1,0 +1,133 @@
+\documentclass[a4paper,12pt,justified,twoside,notoc]{tufte-book}
+
+%% Well understand input, and nice output
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% \usepackage[pdftex]{hyperref}
+% \makeatletter
+% \AtBeginDocument{
+%   \hypersetup{
+%     pdftitle = {Chasse aux trésors photographique au Musée des Beaux Arts},
+%     pdfauthor = {Lilian Besson}
+%   }
+% }
+% \makeatother
+
+\hypersetup{colorlinks}  % uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
+
+%% Book metadata
+\title[Chasse aux trésors photographique au Musée des Beaux Arts]{``Chasse aux trésors photographique \\ au Musée des Beaux Arts''}
+\author[Lilian]{Lilian Besson}
+\publisher{Samedi 12 janvier 2019}
+
+\usepackage{palatino}
+
+%% For nicely typeset tabular material
+\usepackage{booktabs}
+
+%% For graphics / images
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{pictures/}}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+%% Prints a trailing space in a smart way.
+\usepackage{xspace}
+
+%% https://tex.stackexchange.com/a/157404/
+\usepackage[tocflat]{tocstyle}
+\usetocstyle{standard}
+
+
+%% Prints the month name (e.g., January) and the year (e.g., 2008)
+\newcommand{\monthyear}{%
+  \ifcase\month\or janvier\or février\or mars\or avril\or mai\or juin\or
+  juillet\or août\or septembre\or octobre\or novembre\or
+  décembre\fi\space\number\year
+}
+
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Inserts a blank page
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
+
+% Define macros for config
+\input{config.tex}
+
+\global\marginparsep=34pt
+\global\marginparwidth=124pt
+\global\textwidth=285pt
+% \global\inner=1cm
+% \global\outer=2cm
+
+\begin{document}
+
+
+% r.3 full title page
+\maketitle
+
+
+% v.4 copyright page
+\newpage
+\begin{fullwidth}
+
+\begin{center}
+  \includegraphics[width=1.1\textwidth]{les_petits_pois_sont_verts.jpeg}
+\end{center}
+
+~
+\vfill
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+Copyright \copyright\ \the\year\ \thanklessauthor
+
+% \par\smallcaps{https://github.com/Naereen/Chasse-aux-tr-sors-au-Louvre-pour-mes-25-ans}
+
+\par Cette œuvre est mise à disposition sous licence Attribution - Pas d'Utilisation Commerciale - Pas de Modification 4.0 International. Pour voir une copie de cette licence, visitez \url{http://creativecommons.org/licenses/by-nc-nd/4.0/} ou écrivez à Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.\index{license}
+
+\par\textit{Première édition, \monthyear}.
+\end{fullwidth}
+
+% r.5 contents
+\setcounter{tocdepth}{2}
+
+\begin{large}
+  \tableofcontents
+\end{large}
+
+% \listoffigures
+% \listoftables
+
+% ---
+
+% r.9 introduction
+\cleardoublepage
+\input{introduction.tex}
+
+
+% r.10 all the enigmas
+\cleardoublepage
+\chapter{Énigmes}
+
+\begin{fullwidth}
+\input{all.tex}
+\end{fullwidth}
+
+
+% r.10 conclusion
+\cleardoublepage
+\input{conclusion.tex}
+
+\newpage
+\blankpage
+
+\end{document}
