@@ -1,0 +1,12 @@
+% \newpage
+\section[$if(Title)$$Title$$else$Sans Titre$endif$]{$if(Title)$$Title$$else$Sans Titre$endif$$if(date)$\footnotemark$endif$}
+%
+% \begin{center}\rule{0.6\linewidth}{\linethickness}\end{center}
+
+\begin{LARGE}
+$body$
+\end{LARGE}
+
+\begin{center}\rule{0.6\linewidth}{\linethickness}\end{center}
+% \vfill
+$if(date)$\footnotetext{Publié le $date$}$endif$

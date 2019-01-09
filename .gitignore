@@ -1,0 +1,45 @@
+# PDF
+output/*.pdf
+*.pdf
+
+# Automatically generated files
+src/*.tex
+all.tex
+config.tex
+
+# Private file
+telephones.tex
+
+# LaTeX temporary files #
+#########################
+*.log
+*.lot
+*.gz
+*.fls
+*.fdb_latexmk
+*.ps
+*.dvi
+*.htoc
+*.tms
+*.tid
+*.lg
+*.id[vx]
+*.vrb
+*.toc
+*.snm
+*.nav
+*.htmp
+*.aux
+*.tmp
+*.out
+*.haux
+*.hidx
+*.bbl
+*.blg
+*.brf
+*.lof
+*.ilg
+*.ind
+*.meta
+*.fdb_latexmk
+*.fls
