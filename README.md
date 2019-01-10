@@ -19,7 +19,7 @@
 
 Pour fêter mes 26 ans, j'ai organisé une"chasse aux trésors", au [musée des Beaux Arts à Rennes](http://mba.rennes.fr/), en janvier 2019.
 
-J'ai écrit 26 énigmes, consistant pour la plupart en une tâche simple du genre ["prendre en photo 5 extraits écrits en langue ancienne"](src/1.md).
+J'ai écrit 45 énigmes, consistant pour la plupart en une tâche simple du genre ["prendre en photo 5 extraits écrits en langue ancienne"](src/1.md).
 
 J'avais réunis une douzaine d'ami-e-s, regroupé-e-s en équipe de 2-3 personnes.
 
@@ -29,7 +29,7 @@ Ce dépôt Git contient les sources (LaTeX et Markdown), des modèles et des scr
 
 ## Construire les livrets d'énigmes
 
-- Dépendances : git, make, pdflatex, pandoc, python, [PDFCompress](https://bitbucket.org/lbesson/bin/src/master/PDFCompress) et bash. Testé seulement sous [XUbuntu 17.10](https://xubuntu.org/getxubuntu/),
+- Dépendances : git, make, pdflatex, pandoc, python, [PDFCompress](https://bitbucket.org/lbesson/bin/src/master/PDFCompress) et bash. Testé seulement sous [XUbuntu 18.04 LTS](https://xubuntu.org/getxubuntu/),
 - Clonez ce dépôt,
 ```bash
 $ cd /tmp/  # ou n'importe où
