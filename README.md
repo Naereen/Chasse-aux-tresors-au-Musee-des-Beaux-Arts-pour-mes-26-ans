@@ -5,17 +5,15 @@
 
 ![https://perso.crans.org/besson/publis/Chasse-aux-tresors-au-Musee-des-Beaux-Arts-pour-mes-26-ans.git/main.pdf](screenshots/demo1.png)
 
-TODO screeshots!
-
 - Introduction avec les règles du jeu et conclusion :
 
 <a href="https://perso.crans.org/besson/publis/Chasse-aux-tresors-au-Musee-des-Beaux-Arts-pour-mes-26-ans.git/main.pdf"><img width="50%" src="screenshots/demo2.png"></a><a href="https://perso.crans.org/besson/publis/Chasse-aux-tresors-au-Musee-des-Beaux-Arts-pour-mes-26-ans.git/main.pdf"><img width="50%" src="screenshots/demo3.png"></a>
 
 - Liste d'énigmes : dans ce dossier [`src/`](src/).
 
-- Exemple de deux énigmes ([1](srd/1.md) et [2](src/2.md), des clins d'œil à Kaamelott) :
+- Exemple de deux énigmes ([1](srd/1.md) et [2](src/2.md)) :
 
-![https://kaamelott-soundboard.2ec0b4.fr/](screenshots/demo4.png)
+<a href="https://perso.crans.org/besson/publis/Chasse-aux-tresors-au-Musee-des-Beaux-Arts-pour-mes-26-ans.git/main.pdf"><img width="50%" src="screenshots/demo4.png"></a>
 
 ## À propos
 
@@ -50,13 +48,13 @@ $ make all_pdf
 
 ## Sources et idées
 - Une visite au Musée des Beaux Arts de Rennes !
-- De l'inspiration et de nombreuses sources...
+- De l'inspiration, des jeux de mots pourris, une culture générale un peu ridicule, et quelques autres composants…
 - Et surtout, [le code développé l'an dernier pour l'anniversaire de mes 25 ans](https://github.com/Naereen/Chasse-aux-tr-sors-au-Louvre-pour-mes-25-ans/)
 
 ----
 
 ## Aspect technique
-- Ce document a été rédigé et compilé par mes soins, en sélectionnant *aléatoirement* des énigmes parmi une [liste d'énigmes](src/). Chaque livret contient **26** énigmes, dans un ordre aléatoire (uniforme).
+- Ce document a été rédigé et compilé par mes soins, en sélectionnant *aléatoirement* des énigmes parmi une [liste de 45 énigmes](src/). Chaque livret contient **40** énigmes, dans un ordre aléatoire (uniforme).
 - Chaque énigme a été rédigée comme un document [Markdown](https://daringfireball.net/projects/markdown/), qui est ensuite compilé en LaTeX par [`pandoc`](http://pandoc.org/).
 - Le document principal est un simple document LaTeX, utilisant le style très épuré de [Tufte-LaTeX](https://github.com/Tufte-LaTeX/tufte-latex).
 - Ce recueil à été rédigé et imprimé en janvier 2019.

@@ -3,8 +3,8 @@
 # FIXME ATTENTION changer ici !
 export NB_EQUIPES=5
 export NB_PAR_EQUIPE=3
-export INTERVALE_PAR_EQUIPE="4-5"
-export NB_QUESTIONS=26
+export INTERVALE_PAR_EQUIPE="2-3"
+export NB_QUESTIONS=40
 
 TOTAL_QUESTIONS=$(find ./src/ -iname '[[:digit:]]*.md' | wc -l)
 export TOTAL_QUESTIONS=${TOTAL_QUESTIONS:-26}
